@@ -1,0 +1,1 @@
+console.log("output ile sonuc gorme");

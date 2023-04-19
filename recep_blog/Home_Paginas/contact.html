@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Purdy Vossen\Desktop\recep\recep_blog\Home_Paginas\contact.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="row">
+        <div class="col-12">
+            <div class="col">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div id="header_blog">
+                        <li><a href="index.html">Home</li></a>
+                        <li><a href="artikels.html">Artikels </li> </a>
+                        <li><a href="nieuws.html">Nieuws</li></a>
+                        <li><a href="overmij.html">Over mij</li></a>
+                        <li><a href="links.html">Handige Links</li></a>
+                        <li><a href="contact.html">Contact</li></a>
+
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="row">
+        <div class="col-3">Left Menü
+            <!-- unordered list -->
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="nieuws.html">Nieuws</a></li>
+                <li> <a href="artikels.html">Artikels</a>
+                    <ol>
+                        <li><a href="artikels.html#data"> Data Science </a></li>
+                        <li><a href="artikels.html#security"> Cyber Security </a></li>
+                        <li><a href="artikels.html#web"> Web Developer </a></li>
+                        <li><a href="artikels.html#robot"> Robot / AR </a></li>
+                        <li><a href="artikels.html#system"> System </a></li>
+                        <li><a href="artikels.html#devops"> Dev-Ops </a></li>
+                        <li><a href="artikels.html#ontwerp"> Ontwerpen </a></li>
+                        <li><a href="artikels.html#tester"> Test Automations </a></li>
+                    </ol>
+                </li>
+                <li> <a href="overmij.html">Over mij</a></li>
+                <li> <a href="links.html">Handige Links</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="mailto:info@example.com" target="_blank">Send mail</a> </li>
+                <li><a href="http://wa.me/0313698552147" target="_blank">Whatsap me</a></li>
+                <li><a href="tel:+310258741" target="_blank"> Call me</a></li>
+            </ul>
+
+            <!-- table in form -->
+
+            <form action="" method="post" enctype="multipart/form-data">
+            <table >
+                <tr>
+                    <td >
+                        <!-- 1. table -->
+                        <table>
+                            <tr>
+                                <td><label for="name">Name: </label></td>
+                                <td><input type="text" name="name" id="name" required minlength="2" maxlength="35"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="surname">Surname: </label></td>
+                                <td><input type="text" name="surname" id="surname" required minlength="2" maxlength="35"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Sexuality: </label></td>
+                                <td>
+                                    <input type="radio" name="sexuality" id="sexualityM" value="man" required>
+                                    <label for="sexualityM">Man</label>
+
+                                    <input type="radio" name="sexuality" id="sexualityW" value="woman" required>
+                                    <label for="sexualityW">Woman</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="Country">Landen</label></td>
+                                <td>
+                                    <select name="country" id="country" required>
+                                        <option disabled selected>Choose please!</option>
+                                        <option value="nl">Netherland</option>
+                                        <option value="usa">United State</option>
+                                        <option value="uk">United Kingdom</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="mail">Email</label></td>
+                                <td><input type="mail" name="mail" id="mail" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="web">Website</label></td>
+                                <td><input type="url" name="web" id="web"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mobiel">Mobiel</label></td>
+                                <td><input type="tel" name="mobiel" id="mobiel"></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                    <!-- 2. table -->
+                    <td>
+                        <table>
+                            
+                                <tr>
+                                <td> <label for="profile">Profile foto</label></td>
+                                <td> <input type="file" name="profile" id="profile"></td>
+                                </tr>
+
+                                <tr>
+                                <td> <label for="age">Age</label></td>
+                                <td> <input type="date" name="age" id="age" required max="2014-01-01"></td>
+                                </tr>
+
+                                <tr>
+                                <td><label for="address"> Address</label></td>
+                                <td> <textarea name="address" id="address" cols="25" rows="2"></textarea></td>
+                                </tr>
+
+
+                            <tr>
+                                    <td>What do you want to learn?</td>
+                                
+                                    
+                                    <td>
+                                    <input type="checkbox" name="it" id="it_data">
+                                    <label for="it_data"> Data Science &nbsp;</label>
+                                    <br>
+                                    <input type="checkbox" name="it" id="it_security">
+                                    <label for="it_security"> Cyber Security </label >
+                                    <br>
+                                    <input type="checkbox" name="it" id="it_dweb">
+                                    <label for="it_dweb"> Web Development</label>
+                                    <br>
+                                    <input type="checkbox" name="it" id="it_robot">
+                                    <label for="it_robot"> Robot AR/HR</label><br>
+
+                                    <input type="checkbox" name="it" id="it_system">
+                                    <label for="it_system"> System Engineer</label>
+                                    <br>
+                                    <input type="checkbox" name="it" id="it_devops">
+                                    <label for="it_devops"> Dev-Ops</label>
+                                    <br>
+                                    <input type="checkbox" name="it" id="it_ontwerpen">
+                                    <label for="it_ontwerpen"> Ontwerpen</label>
+                                    <br>
+                                    <input type="checkbox" name="it" id="it_test">
+                                    <label for="it_test"> Test Authmation</label>
+                                    </td>
+          
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2"> <button class="primary" type="submit">Save</button>            </td>
+
+                            </tr>
+                           
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+
+
+        <div class="col-3">
+            <h2> Right Site</h2> </br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur maiores corrupti iure impedit autem
+            molestias omnis adipisci laboriosam laborum voluptas, quia suscipit, accusamus sed harum repellendus!
+            Delectus, voluptas possimus!
+            
+        </div>
+    </main>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Powered by <a href="" target="_blank">recep bayram</a></p>
+    </footer>
+
+    <script src="c:\Users\Purdy Vossen\Desktop\recep\recep_blog\Home_Paginas\app.js"></script>
+
+</body>
+
+</html>
